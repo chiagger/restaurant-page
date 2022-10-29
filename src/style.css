@@ -92,3 +92,7 @@ ul > li:active {
     border-radius: 20px;
     background-color: white;
 }
+
+.dish {
+    font-size: 1.5em;
+}

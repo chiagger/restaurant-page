@@ -1,4 +1,4 @@
-function makeMenu() {
+function makeContact() {
     const content = document.getElementById("content");
     const center = document.querySelector(".center");
 
@@ -12,21 +12,21 @@ function makeMenu() {
     
     const description = document.createElement("div");
     description.classList.add("description");
-    description.textContent = "Menu of the day";
+    description.textContent = "Our Contacts";
 
-    const dish1 = document.createElement("div");
-    dish1.classList.add("dish");
-    dish1.textContent = "Tagliatelle";
-    const dish2 = document.createElement("div");
-    dish2.classList.add("dish");
-    dish2.textContent = "Hamburger";
+    const email = document.createElement("div");
+    email.classList.add("contact");
+    email.textContent = "this.email@gmail.com";
+    const phone = document.createElement("div");
+    phone.classList.add("contact");
+    phone.textContent = "+44 9384933749";
 
     info.appendChild(description);
-    info.appendChild(dish1);    
-    info.appendChild(dish2);
+    info.appendChild(email);    
+    info.appendChild(phone);
 
     centerDiv.appendChild(info);
     content.appendChild(centerDiv);
 }
 
-module.exports = {makeMenu}
+module.exports = {makeContact}

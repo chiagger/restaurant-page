@@ -1,5 +1,8 @@
 function makeHome() {
     const content = document.querySelector('#content');
+    const centerDiv = document.querySelector(".center");
+
+    content.removeChild(centerDiv);
     
     const center = document.createElement("div");
     center.classList.add("center");
