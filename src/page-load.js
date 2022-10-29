@@ -1,20 +1,4 @@
-/** <div class="header">
-            <div id="logo">ThisRestaurant</div>
-            <div class="options">
-                <ul id="opt">
-                    <li>Home</li>
-                    <li>Menu</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-        </div>
-        <div class="center">
-            <div class="info">
-                <div class="description">Best food in town, come try it!</div>
-                <div class="lower">Affordable too!</div>
-                <button id="order">Order Now</button>
-            </div>
-        </div>**/
+
 
 
 
@@ -39,14 +23,34 @@ function createHTML() {
     opt.appendChild(li1);
     opt.appendChild(li2);
     opt.appendChild(li3);
+    options.appendChild(opt);
 
     header.appendChild(logo);
-    header.appendChild(opt);
-
-    content.appendChild(header);
+    header.appendChild(options);
 
     const center = document.createElement("div");
     center.classList.add("center");
+    
+    const info = document.createElement("div");
+    info.classList.add("info");   
+    
+    const description = document.createElement("div");
+    description.classList.add("description");
+    description.textContent = "Best food in town, come try it!";
+    const lower = document.createElement("div");
+    lower.classList.add("lower");
+    lower.textContent = "Affordable too!";
+    const order = document.createElement("div");
+    order.setAttribute("id","order");
+    order.textContent = "Order Now";
+    order.style.color="black";
+
+    info.appendChild(description);
+    info.appendChild(lower);
+    info.appendChild(order);
+    center.appendChild(info);
+
+    content.appendChild(header);
     content.appendChild(center);
 }
 
