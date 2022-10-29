@@ -1,7 +1,3 @@
-
-
-
-
 function createHTML() {
     const content = document.querySelector('#content');
     const header = document.createElement("div");
@@ -15,10 +11,13 @@ function createHTML() {
     const opt = document.createElement("ul");
     opt.setAttribute("id", "opt");
     const li1 = document.createElement("li");
+    li1.setAttribute("id","home");
     li1.textContent="Home";
     const li2 = document.createElement("li");
+    li2.setAttribute("id","menu");
     li2.textContent="Menu";
     const li3 = document.createElement("li");
+    li3.setAttribute("id","contactus");
     li3.textContent="Contact Us";
     opt.appendChild(li1);
     opt.appendChild(li2);
